@@ -1,0 +1,26 @@
+id,label,homepage,domain,polarity,media_type,stories_per_week,primary_language
+366487,Conservative Review,https://www.conservativereview.com/,conservativereview.com,-1.0,,491.0,en
+19334,Breitbart,https://www.breitbart.com/,breitbart.com,-1.0,digital_native,733.0,en
+101,Washington Times,https://www.washingtontimes.com/,washingtontimes.com,-1.0,print_native,790.0,en
+293059,dennismichaellynch.com,http://dennismichaellynch.com/,dennismichaellynch.com,-1.0,,424.0,en
+1092,Foxnews.com,http://www.foxnews.com/,foxnews.com,-1.0,video_broadcast,980.0,en
+18966,reason.com,http://reason.com,reason.com,-0.5,,2501.0,en
+25701,thesun.co.uk,http://www.thesun.co.uk/sol/homepage/,thesun.co.uk,-0.5,,2496.0,en
+717902,daily.gazette.com,http://daily.gazette.com/,gazette.com,-0.5,,2086.0,en
+20120,nj.com,http://www.nj.com,nj.com,-0.5,digital_native,1911.0,en
+66979,krdo.com,http://www.krdo.com/,krdo.com,-0.5,video_broadcast,1283.0,en
+1089,Reuters,http://www.reuters.com/,reuters.com,0.0,other,5263.0,en
+32313,thespec.com,http://www.thespec.com,thespec.com,0.0,,3436.0,en
+22529,philly.com,http://www.philly.com,philly.com,0.0,,2996.0,
+18482,bloomberg.com,http://bloomberg.com,bloomberg.com,0.0,,2460.0,en
+7,nypost.com,https://nypost.com,nypost.com,0.0,print_native,2287.0,en
+1098,newsweek.com,https://newsweek.com,newsweek.com,0.5,,1779.0,en
+18203,الجزيرة نت,http://aljazeera.net,aljazeera.net,0.5,video_broadcast,1496.0,ar
+1,New York Times,http://nytimes.com,nytimes.com,0.5,print_native,2230.0,en
+22529,philly.com,http://www.philly.com,philly.com,0.5,,2996.0,
+1089,Reuters,http://www.reuters.com/,reuters.com,0.5,other,5263.0,en
+22389,Deadspin,http://deadspin.com,deadspin.com,1.0,digital_native,745.0,en
+314,The Huffington Post (old domain name),http://www.huffingtonpost.com/,huffingtonpost.com,1.0,digital_native,734.0,en
+1127,Raw Story,http://rawstory.com,rawstory.com,1.0,digital_native,551.0,en
+21511,Boston Globe,http://www.bostonglobe.com,bostonglobe.com,1.0,,1080.0,en
+1096,npr.org,http://www.npr.org/,npr.org,1.0,video_broadcast,406.0,en
