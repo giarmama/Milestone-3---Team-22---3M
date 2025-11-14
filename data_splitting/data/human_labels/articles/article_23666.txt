@@ -1,0 +1,19 @@
+======================================================================
+Article ID: 23666
+Outlet: Newsweek
+Political Bias: Left
+Date: 2018-07-23
+Word Count: 459
+======================================================================
+
+New research on rhesus macaque monkeys revealed new insights into human speech.
+Researchers at Rockefeller University studied the macaque monkey brain to find evolutionary links to human communication. The study, published in Neuron on July 12, uncovered parts of the brain of the macaque monkey that could show a common evolutionary origin for human and monkey communication abilities.
+Winrich Freiwald, whose lab did the research, has studied macaque monkey brains in the past. He found that they have neural networks that are similar to the human networks that help with facial recognition. Previously, scientists have found specific regions of the monkey brain that could be responsible for facial expressions, but they weren't able to see if those areas were active, and didn't know if they were being used for communication.
+In this new research, Freiwald and a research associate in his lab, Stephan Shepherd, attempted to determine how the different networks in the brain are able to communicate with each other, and which ones are doing it.
+"Understanding this in monkeys will help us understand communication in humans, where things are so much more complicated," Freiwald said in a statement.
+While researchers watched MRI of the monkey's brains, the monkeys watched videos of other monkeys who were making facial expressions to communicate. To imitate a situation where the monkeys would have been observing social interactions between other animals, in some of the videos, the on-camera monkeys looked off to the side. To show a situation where direct communication would be occurring, the monkeys looked directly into the camera.
+The monkeys that were being studied only responded when the videotaped monkeys were looking directly into the camera. If the monkey on camera made a friendly gesture, like lip-smacking, the studied monkeys would respond the same way.
+The Rockefeller University team thought the facial recognition areas of the brain would be activated and would send the information to the emotional area of the brain, then to the area of the brain that controls facial expressions.The MRIs showed those areas of the brain were activated, but that wasn't all they showed.
+The researchers found that a new, different pattern of activation was also initiated to create facial expressions. When creating the lip-smacking gesture, the Broca's area lit up. The Broca's area is what helps initiate speech in the human brain.
+The researchers think this means that the monkey's friendly lip smack is one of human speech's evolutionary precursors. Some scientists had previously discounted that because they felt the monkey's gesture were too simple to lead to speech, but this research suggests otherwise.
+The scientists planned to research electrical activity within the neurons of the macaque monkey brain next, in an attempt to learn more about what's happening when the monkeys are communicating.

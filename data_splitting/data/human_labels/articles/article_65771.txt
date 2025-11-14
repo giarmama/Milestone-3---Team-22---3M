@@ -1,0 +1,12 @@
+======================================================================
+Article ID: 65771
+Outlet: BBC News
+Political Bias: Center
+Date: 2018-07-31
+Word Count: 132
+======================================================================
+
+Most flyers will be familiar with the need to put their devices into “airplane mode”. But light-based technology on aircraft could allow people to remain online even during take-off and landing.
+Overhead LED bulbs that turn off and on millions of times every second – so fast it is undetectable to the human eye – can send data 100 times faster than traditional wi-fi.
+Airbus has been working on installing this li-fi technology on its aircraft as it avoids interference with electronic equipment that has led to restrictions on wi-fi and also offers enchanced security.
+For now, connecting to li-fi requires a special dongle that attaches to laptops. But li-fi capability appears in the code of Apple’s latest iOS operating system, suggesting the technology could become hardwired into devices in the future.

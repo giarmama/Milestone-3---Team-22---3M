@@ -1,1 +1,22 @@
+# Database
 news_articles.db
+
+# Plan documents (don't upload)
+framing_drift_analysis_plan.md
+STANDUP_CHECKLIST.md
+
+# Virtual environment (don't upload)
+venv/
+env/
+
+# Python artifacts (don't upload)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.ipynb_checkpoints/
+
+# OS files (don't upload)
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+======================================================================
+Article ID: 32298
+Outlet: Newsweek
+Political Bias: Left
+Date: 2018-05-18
+Word Count: 498
+======================================================================
+
+The alleged owners of Mugshots.com, a controversial website that scrapes police department booking photos and collates them into a searchable format, have been arrested following charges filed in the state of California including cyber extortion, money laundering and identity theft.
+Thomas Keesee and Sahar Sarid, of Florida, were detained on Wednesday this week following an investigation spearheaded by the Northern California Computer Crimes Task Force. The case is now being prosecuted by California's attorney general Xavier Becerra, who has accused the website's owners of running a "pay-for-removal scheme" attempting to profit from arrestees' humiliation.
+The site mines data from police and sheriff's department websites to collect names, booking photos and charges, then publishes the information online without consent. It runs a second website called Unpublisharrest.com that charges a "de-publishing" fee to have the content removed. An affidavit (via Ars Technica) shows testimonies from over a dozen men and women who were allegedly defrauded.
+The two other alleged owners of Mugshots.com—named as Kishore V. Bhavnanie and David Usdan—have also been charged. Bhavnanie, of Pennsylvania, is reportedly being held on a bail of $1.86 million.
+The attorney general's office said in a press release published Wednesday that, over the past three years, the defendants had made more than $64,000 by charging removal fees from around 175 individuals with billing addresses in California. Nationally, investigators believe that the operation earned more than $2 million in removal fees from more than 5,700 individuals during the same period.
+"Those who can't afford to pay into this scheme to have their information removed pay the price when they look for a job, housing, or try to build relationships with others," Becerra said. "This is exploitation."
+The affidavit testimonies show victims had paid hundreds of dollars to have their faces removed.
+One man called "K.H"—full identities are protected—suggested his mugshot had contributed to his lack of employment. Due to his "unusual name" a Google search prominently displayed the booking snap. Another given by a woman called "Rosa S" detailed how the site refused to delete an entry for her deceased husband, who was jailed for one night and never charged, without her paying.
+The probe into the website showed it was formed in 2011. It was linked to the four named defendants via bank records and search warrants against accounts on Google, Yahoo, Amazon and Comcast. "Mugshots.com constitutes a business permeated with fraud," the investigator's statement concluded.
+As noted by Ars Technica, alleged owner Sarid posted an update to his website earlier this week, May 15, claiming that his personal involvement with the accused website was unpaid and ended in December 2013. He wrote: "I was not an owner, or an officer of any business related to Mugshots.com. Mugshots.com makes public arrest records easier to find. I support these ideas and ideals."
+The website remains online and accessible at the time of writing.The California attorney general's office said this week that it is currently seeking for the men be extradited and face prosecution in California.
