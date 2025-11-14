@@ -1,10 +1,6 @@
 # Database
 news_articles.db
 
-# Plan documents (don't upload)
-framing_drift_analysis_plan.md
-STANDUP_CHECKLIST.md
-
 # Virtual environment (don't upload)
 venv/
 env/
