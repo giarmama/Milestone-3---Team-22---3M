@@ -84,3 +84,48 @@ def Predict_vector(article: str):
 
     preds = (probs >= best_thresh).astype(int)
     return preds, probs
+
+def Row_to_vector(row):
+    """ Convert gold standard row to a vector."""
+    FRAME_COL_MAP = {
+    "economic": "L_economics",
+    "fairness": "L_fairness",
+    "public_op": "L_public opinion",
+    "political": "L_political",
+    "quality_life": "L_QOL",
+    "crime": "L_crime",
+    "culture": "L_culture",
+    "health": "L_health",
+    "legality": "L_legality",
+    "morality": "L_morality",
+    "policy": "L_policy",
+    "regulation": "L_regulation",
+    "security": "L_security",
+    "cap&res": "L_capacity_resources",
+    }
+    
+    vec = []
+    for f in frames:
+        col = FRAME_COL_MAP[f]
+        val = row.get(col, np.nan)
+        vec.append(0 if pd.isna(val) else int(val > 0))
+    return np.array(vec, dtype=int)
+
+def Eval_against_gold(gold_df):
+    y_true = []
+    y_pred = []
+    
+    for i, row in gold_df.iterrows():
+        text = row["content"]
+        
+        gold_vec = Row_to_vector(row)
+        pred_vec, _ = Predict_vector(text)
+    
+        y_true.append(gold_vec)
+        y_pred.append(pred_vec)
+    
+    y_true = np.vstack(y_true)
+    y_pred = np.vstack(y_pred)
+    
+    print("Evaluated articles:", y_true.shape[0])
+    return y_true,  y_pred
