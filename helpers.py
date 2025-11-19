@@ -111,14 +111,17 @@ def Row_to_vector(row):
         vec.append(0 if pd.isna(val) else int(val > 0))
     return np.array(vec, dtype=int)
 
-def Eval_against_gold(gold_df):
+def Eval_against_gold(gold_df,vector_col=None):
     y_true = []
     y_pred = []
     
     for i, row in gold_df.iterrows():
         text = row["content"]
         
-        gold_vec = Row_to_vector(row)
+        if vector_col:
+            gold_vec = np.array(row[vector_col], dtype=int)
+        else:            
+            gold_vec = Row_to_vector(row)
         pred_vec, _ = Predict_vector(text)
     
         y_true.append(gold_vec)
