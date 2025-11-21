@@ -36,8 +36,8 @@ def Load_model(save_dir: str):
     return model, tok, frames, best_thresh
 
 
-def Predict_frames(article: str, return_all: bool = True):
-    """Return a sorted dataframe OR a list of predicted frames."""
+def Predict(article: str):
+    """Predict frames and return labels, vectors, and probabilites."""
 
 
     # Tokenize
@@ -54,40 +54,14 @@ def Predict_frames(article: str, return_all: bool = True):
         logits = model(**inputs).logits
         probs = torch.sigmoid(logits).cpu().numpy()[0]
     probs = probs.round(5)
-
     preds = (probs >= best_thresh).astype(int)
 
-    # Build dataframe
-    results = [
-        {"frame": f, "prob": float(p), "predicted": bool(pred)}
-        for f, p, pred in zip(frames, probs, preds)
-    ]
+    frames = Vec_to_frame(preds)
 
-    df = pd.DataFrame(results)
-    df = df.sort_values("prob", ascending=False).reset_index(drop=True)
+    return frames, preds, probs
 
-    if return_all:
-        return df
-    else:
-        return df[df["predicted"] == True]["frame"].tolist()
-
-def Predict_vector(article: str):
-    """Return (preds, probs) for a single article."""
-    inputs = tok(
-        article,
-        truncation=True,
-        padding="max_length",
-        max_length=512,
-        return_tensors="pt"
-    )
-
-    with torch.no_grad():
-        logits = model(**inputs).logits
-        probs = torch.sigmoid(logits).cpu().numpy()[0]
-    probs = probs.round(5)
-
-    preds = (probs >= best_thresh).astype(int)
-    return preds, probs
+def Vec_to_frame(vec):
+    return[f for f,v in zip(frames,vec) if v ==1]
 
 def Row_to_vector(row):
     """ Convert gold standard row to a vector."""
@@ -114,9 +88,6 @@ def Row_to_vector(row):
         val = row.get(col, np.nan)
         vec.append(0 if pd.isna(val) else int(val > 0))
     return np.array(vec, dtype=int)
-
-def Vec_to_frame(vec):
-    return[f for f,v in zip(frames,vec) if v ==1]
 
 def Eval_against_gold(gold_df,vector_col=None):
     y_true = []
