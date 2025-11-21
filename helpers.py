@@ -1,9 +1,13 @@
 import torch
 import json
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import numpy as np
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from langdetect import detect, DetectorFactory
+
+DetectorFactory.seed = 42
 np.set_printoptions(precision=5, suppress=True)
+
 
 # Globals
 tok = None
@@ -111,6 +115,9 @@ def Row_to_vector(row):
         vec.append(0 if pd.isna(val) else int(val > 0))
     return np.array(vec, dtype=int)
 
+def Vec_to_frame(vec):
+    return[f for f,v in zip(frames,vec) if v ==1]
+
 def Eval_against_gold(gold_df,vector_col=None):
     y_true = []
     y_pred = []
@@ -132,3 +139,9 @@ def Eval_against_gold(gold_df,vector_col=None):
     
     print("Evaluated articles:", y_true.shape[0])
     return y_true,  y_pred
+
+def Is_english(text):
+    try:
+        return detect(text) == "en"
+    except:
+        return False
