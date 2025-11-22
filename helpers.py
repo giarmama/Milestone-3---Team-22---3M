@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from langdetect import detect, DetectorFactory
-
+from tqdm import tqdm
+tqdm.pandas()
 DetectorFactory.seed = 42
 np.set_printoptions(precision=5, suppress=True)
 
@@ -14,6 +15,7 @@ tok = None
 model = None
 frames = None
 best_thresh = None
+device = None
 
 
 def Load_model(save_dir: str):
@@ -21,7 +23,7 @@ def Load_model(save_dir: str):
     Load tokenizer, model, frame list, and best threshold from a directory.
     Call this once before using Predict_frames().
     """
-    global tok, model, frames, best_thresh
+    global tok, model, frames, best_thresh, device
 
     tok = AutoTokenizer.from_pretrained(save_dir)
     model = AutoModelForSequenceClassification.from_pretrained(save_dir)
@@ -32,33 +34,56 @@ def Load_model(save_dir: str):
     with open(f"{save_dir}/threshold.json") as f:
         best_thresh = json.load(f)["global"]
 
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
+    model.eval()
+
     print(f"Model, tokenizer, frames, and threshold loaded from: {save_dir}")
+    print(f"Using device: {device}")
     return model, tok, frames, best_thresh
 
 
-def Predict(article: str):
-    """Predict frames and return labels, vectors, and probabilites."""
+def Predict(texts, batch_size=32):
+    """
+   Predict frames and probabilities in batches.
+    """
+    device = next(model.parameters()).device
+    
+    all_frames = []
+    all_vecs = []
+    all_probs = []
 
+    for i in tqdm(range(0, len(texts), batch_size)):
+        batch = texts[i:i + batch_size]
 
-    # Tokenize
-    inputs = tok(
-        article,
-        truncation=True,
-        padding="max_length",
-        max_length=512,
-        return_tensors="pt"
-    )
+        # Tokenize whole batch at once
+        inputs = tok(
+            batch,
+            truncation=True,
+            padding=True,
+            max_length=512,
+            return_tensors="pt"
+        )
+        inputs = {k: v.to(device) for k, v in inputs.items()}
 
-    # Predict
-    with torch.no_grad():
-        logits = model(**inputs).logits
-        probs = torch.sigmoid(logits).cpu().numpy()[0]
-    probs = probs.round(5)
-    preds = (probs >= best_thresh).astype(int)
+        with torch.no_grad():
+            logits = model(**inputs).logits
+            probs = torch.sigmoid(logits).cpu().numpy()
 
-    frames = Vec_to_frame(preds)
+        probs = probs.round(5)
+        preds = (probs >= best_thresh).astype(int)
 
-    return frames, preds, probs
+        # Convert vectors to frame lists
+        for vec in preds:
+            all_frames.append(Vec_to_frame(vec))
+
+        all_vecs.append(preds)
+        all_probs.append(probs)
+
+    all_vecs = np.vstack(all_vecs)
+    all_probs = np.vstack(all_probs)
+    return all_frames, all_vecs, all_probs
+
 
 def Vec_to_frame(vec):
     return[f for f,v in zip(frames,vec) if v ==1]
