@@ -125,7 +125,8 @@ def Eval_against_gold(gold_df,vector_col=None):
             gold_vec = np.array(row[vector_col], dtype=int)
         else:            
             gold_vec = Row_to_vector(row)
-        pred_vec, _ = Predict_vector(text)
+        _, pred_vec, _ = Predict([text])
+        pred_vec = pred_vec[0]
     
         y_true.append(gold_vec)
         y_pred.append(pred_vec)
