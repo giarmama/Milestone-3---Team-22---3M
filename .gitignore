@@ -13,6 +13,15 @@ __pycache__/
 .Python
 .ipynb_checkpoints/
 
+# Ignore big data/model artifacts
+data/
+*.parquet
+*.safetensors
+*.pkl
+*.pickle
+*.pt
+*.bin
+
 # OS files (don't upload)
 .DS_Store
 Thumbs.db
