@@ -22,11 +22,11 @@ pip install -r requirements.txt
 
 ##  Data Sources
 - Multi-Modal Framing (MMF) Dataset (https://arxiv.org/html/2503.20960v1#S3)
- - This serves as our primary supervised dataset for training and evaluating our frame classification models.
+  - This serves as our primary supervised dataset for training and evaluating our frame classification models.
 - U.S. News Media Coverage & Outlet Bias Database (https://zenodo.org/records/7476697)
- - This serves as our dataset for downstream analysis of framing patterns over time and across outlets/
+  - This serves as our dataset for downstream analysis of framing patterns over time and across outlets/
 - All Sides Rankings (https://www.kaggle.com/datasets/supratimhaldar/allsides-ratings-of-bias-in-electronic-media)
- - This serves as our dataset to determine political leaning for various outlets.
+  - This serves as our dataset to determine political leaning for various outlets.
 
 
 ## Team Members
