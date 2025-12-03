@@ -7,13 +7,33 @@
 Our project tracks how media topic framing shifts over time across U.S. outlets with different political leanings (left, right, center). We will fine tune a BERT transformer model using the Multi-Modal Framing dataset to classify news articles into an established frame categories. We will use the results to quantify drift across political leanings and over time.
 
 
-## Required Libraries
+## Requirements 
 
-Install the following Python packages:
+Install the required Python packages by running the following command:
 
 ```
 pip install -r requirements.txt
 ```
+
+## Pipeline Overview
+
+- Training: 
+  - Train_MMF.ipynb
+  - Topic_Classification.ipynb
+- Gold Standard Evaluation: 
+  - Gold_Standard_Set_Up.ipynb
+  - Gold_Standard_Eval.ipynb
+- Data Collection/cleaning: 
+  - Data_Collection.ipynb
+  - Data_Collection_New_Sources.ipynb
+- Prediction: 
+  - Framing.ipynb
+  - Framing_New_Sources.ipynb
+  - Topic_Classification.ipynb
+- Merging of topic/frame: 
+  - Data_Merge_and_EDA.ipynb
+- Combine original dataset with additional sources: 
+  - Combine_Clean_and_Generate_Distributions.ipynb
 
 ##  Model Information
 - Base model: microsoft/deberta-v3-base 
