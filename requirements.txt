@@ -10,3 +10,4 @@ matplotlib==3.10.6
 seaborn==0.13.2
 openpyxl==3.1.5
 pyarrow==21.0.0
+plotly==5.24.1
