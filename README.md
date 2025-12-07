@@ -34,6 +34,9 @@ pip install -r requirements.txt
   - Data_Merge_and_EDA.ipynb
 - Combine original dataset with additional sources: 
   - Combine_Clean_and_Generate_Distributions.ipynb
+- Visualization:
+  - Topic_Analysis.ipynb
+  - Interactive_Viz_Setup.ipynb
 
 ##  Model Information
 - Base model: microsoft/deberta-v3-base 
@@ -51,17 +54,21 @@ pip install -r requirements.txt
 
 ## Team Members
 - **Mark Griffin**
+  - Legacy Common Crawl Data Acquisition
   - Zero Shot Topic Clasification
   - Gold Standard Labeling
-  - Topic_Classification.ipynb, Data_Merge_and_EDA.ipynb, Event_Framing_Analysis.ipynb,Frame_Cooccurrence_Analysis.ipynb,Framing_Drift_Analysis.ipynb,Outlet_Framing_Analysis.ipynb,Key_Findings.ipynb
+  - Blog & Report Writing
+  - Topic_Classification.ipynb, Data_Merge_and_EDA.ipynb, Event_Framing_Analysis.ipynb, Frame_Cooccurrence_Analysis.ipynb,Framing_Drift_Analysis.ipynb, Outlet_Framing_Analysis.ipynb, Key_Findings.ipynb
 - **Matt Cott** 
-  - Gold Standard Subset Creation
-  - Gold Standard Labeling
-  - Gold_Standard_Set_Up.ipynb, Topic Analysis_MC.ipynb
+  - Gold Standard Subset Creation & Labeling
+  - Visualization
+  - Blog & Report Writing & Formatting
+  - Gold_Standard_Set_Up.ipynb, Topic Analysis_MC.ipynb, Topic_Analysis.ipynb, Interactive_Viz_Setup.ipynb
 - **Michael Giarmarco** 
   - Data Collection/Cleaining
   - DeBERTa-v3 Training, Evaluation, and Classification
   - Gold Standard Labeling and Evaluation
+  - Blog & Report Writing
   - helpers.py, Train_MMF.ipynb, Gold_Standard_Eval.ipynb, Data_Collection.ipynb, Data_Collection_New_Sources.ipynb, Framing.ipynb, Framing_New_Sources.ipynb, Combine_Clean_and_Generate_Distributions.ipynb, Mickey_Vis_Analysis.ipynb, Mickey_Vis_Analysis_Frames_and_Topics.ipynb
 
 
