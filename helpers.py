@@ -90,6 +90,7 @@ def Vec_to_frame(vec):
 
 def Row_to_vector(row):
     """ Convert gold standard row to a vector."""
+    
     FRAME_COL_MAP = {
     "economic": "L_economics",
     "fairness": "L_fairness",
