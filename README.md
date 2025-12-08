@@ -9,13 +9,13 @@ Our project tracks how media topic framing shifts over time across U.S. outlets 
 
 ## Requirements 
 
-Install the required Python packages by running the following command:
+Install the required Python packages by running the following command in the root directory.
 
 ```
 pip install -r requirements.txt
 ```
 
-Data files should be downloaded from google drvie and the Data folder placed in the root directory
+Data files should be downloaded from google drvie and the Data folder placed in the root directory.
 
 ```
 https://drive.google.com/drive/folders/1QWOPsTCwQvSL5RZp6lBqRdLMvSQblMXR?usp=drive_link
