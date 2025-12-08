@@ -15,6 +15,12 @@ Install the required Python packages by running the following command:
 pip install -r requirements.txt
 ```
 
+Data files should be downloaded from google drvie and the Data folder placed in the root directory
+
+```
+https://drive.google.com/drive/folders/1QWOPsTCwQvSL5RZp6lBqRdLMvSQblMXR?usp=drive_link
+```
+
 ## Pipeline Overview
 
 - Training: 
@@ -69,7 +75,7 @@ pip install -r requirements.txt
   - DeBERTa-v3 Training, Evaluation, and Classification
   - Gold Standard Labeling and Evaluation
   - Blog & Report Writing
-  - helpers.py, Train_MMF.ipynb, Gold_Standard_Eval.ipynb, Data_Collection.ipynb, Data_Collection_New_Sources.ipynb, Framing.ipynb, Framing_New_Sources.ipynb, Combine_Clean_and_Generate_Distributions.ipynb, Mickey_Vis_EDA.ipynb, Mickey_Vis_Analysis.ipynb, Mickey_Vis_Analysis_Frames_and_Topics.ipynb
+  - helpers.py, Train_MMF.ipynb, Gold_Standard_Eval.ipynb, Data_Collection.ipynb, Data_Collection_New_Sources.ipynb, Framing.ipynb, Framing_New_Sources.ipynb, Combine_Clean_and_Generate_Distributions.ipynb, Mickey_Vis_Analysis_With_Additonal_Sources.ipynb, Mickey_Vis_Analysis.ipynb, Mickey_Vis_Analysis_Frames_and_Topics.ipynb
 
 
 
