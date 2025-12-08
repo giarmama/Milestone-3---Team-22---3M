@@ -15,7 +15,8 @@ Install the required Python packages by running the following command in the roo
 pip install -r requirements.txt
 ```
 
-Data files should be downloaded from google drvie and the Data folder placed in the root directory.
+Data files should be downloaded from google drvie and the Data folder placed in the root directory. 
+The folder additional sources is the datasets with the 14 additional sources mentioned in our report for exploration.
 
 ```
 https://drive.google.com/drive/folders/1QWOPsTCwQvSL5RZp6lBqRdLMvSQblMXR?usp=drive_link
