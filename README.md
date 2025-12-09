@@ -15,7 +15,7 @@ Install the required Python packages by running the following command in the roo
 pip install -r requirements.txt
 ```
 
-Data files should be downloaded from google drvie and the Data folder placed in the root directory. 
+Data files should be downloaded from google drive and the Data folder placed in the root directory. 
 The folder additional sources is the datasets with the 14 additional sources mentioned in our report for exploration.
 
 ```
@@ -62,7 +62,7 @@ https://drive.google.com/drive/folders/1QWOPsTCwQvSL5RZp6lBqRdLMvSQblMXR?usp=dri
 ## Team Members
 - **Mark Griffin**
   - Legacy Common Crawl Data Acquisition
-  - Zero Shot Topic Clasification
+  - Zero Shot Topic Classification
   - Gold Standard Labeling
   - Blog & Report Writing
   - Topic_Classification.ipynb, Data_Merge_and_EDA.ipynb, Event_Framing_Analysis.ipynb, Frame_Cooccurrence_Analysis.ipynb,Framing_Drift_Analysis.ipynb, Outlet_Framing_Analysis.ipynb, Key_Findings.ipynb
@@ -72,7 +72,7 @@ https://drive.google.com/drive/folders/1QWOPsTCwQvSL5RZp6lBqRdLMvSQblMXR?usp=dri
   - Blog & Report Writing & Formatting
   - Gold_Standard_Set_Up.ipynb, Topic Analysis_MC.ipynb, Topic_Analysis.ipynb, Interactive_Viz_Setup.ipynb
 - **Michael Giarmarco** 
-  - Data Collection/Cleaining
+  - Data Collection/Cleaning
   - DeBERTa-v3 Training, Evaluation, and Classification
   - Gold Standard Labeling and Evaluation
   - Blog & Report Writing
